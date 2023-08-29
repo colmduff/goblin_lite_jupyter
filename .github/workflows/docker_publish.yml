@@ -47,7 +47,7 @@ jobs:
       env:
         GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
       with:
-        name: colm_duff/goblin_lite_jupyter
+        name: colmduff/goblin_lite_jupyter
         username: ${{ secrets.DOCKER_USERNAME_CD }}
         password: ${{ secrets.DOCKER_PASSWORD_CD }}
         buildargs: GIT_ACCESS_TOKEN
