@@ -50,4 +50,5 @@ jobs:
         name: colm_duff/goblin_lite_jupyter
         username: ${{ secrets.DOCKER_USERNAME_CD }}
         password: ${{ secrets.DOCKER_PASSWORD_CD }}
+        buildargs: GIT_ACCESS_TOKEN
         tags: "latest,${{ steps.bump.outputs.new_tag }}"
