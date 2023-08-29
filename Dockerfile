@@ -15,9 +15,6 @@ USER ${NB_UID}
 # Set your GitHub Personal Access Token here (ensure it is added to the repo)
 ARG GIT_ACCESS_TOKEN
 
-# Set the environment variable with the value of the build argument
-ENV GIT_ACCESS_TOKEN=$GIT_ACCESS_TOKEN
-
 RUN git config --global url."https://${GIT_ACCESS_TOKEN}@github.com/".insteadOf "https://github.com/"
 
 # Install goblin_lite package from the Git repository URL with authentication
