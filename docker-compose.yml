@@ -1,0 +1,7 @@
+services:
+  goblin_lite:
+    image: colmduff/goblin_lite_jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work
