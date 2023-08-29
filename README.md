@@ -15,7 +15,10 @@ Docker support for the open-source [goblin_lite](https://colmduff.github.io/gobl
 4. Start a new container from that directory by running the following command from the command line:
 
     ```{prompt} bash \$ auto
-    $ docker run -it -p 8888:8888 colmduff/goblin_lite_jupyter
+    $ docker run -it \
+        -p 8888:8888 \
+        -v "${PWD}":/home/jovyan/work \
+        colmduff/goblin_lite_jupyter
     ```
     
     ```{tip}
