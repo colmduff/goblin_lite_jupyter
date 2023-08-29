@@ -1,21 +1,21 @@
 # GOBLIN lite with JupyterLab Docker support
 
-Docker support for the open-source [goblin_lite](https://colmduff.github.io/goblin_lite/html/index.html). This repository automatically builds and publishes the image `colm_duff/goblin_lite_jupyter` to DockerHub. The image is intended to be used for development with [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/#).
+Docker support for the open-source [goblin_lite](https://colmduff.github.io/goblin_lite/html/index.html). This repository automatically builds and publishes the image `colmduff/goblin_lite_jupyter` to DockerHub. The image is intended to be used for development with [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/#).
 
 ## Usage
 
 1. Install and configure Docker Desktop for your operating system following the instructions on the [official website](https://www.docker.com/get-started).
-2. Once docker is installed, open a command-line interface and pull the `colm_duff/goblin_lite_jupyter` docker image by running the following command:
+2. Once docker is installed, open a command-line interface and pull the `colmduff/goblin_lite_jupyter` docker image by running the following command:
 
     ```{prompt} bash \$ auto
-    $ docker pull colm_duff/goblin_lite_jupyter
+    $ docker pull colmduff/goblin_lite_jupyter
     ```
 
 3. From the command line, navigate to the directory you want to develop in (this can be called anything and located wherever you like on your file system).
 4. Start a new container from that directory by running the following command from the command line:
 
     ```{prompt} bash \$ auto
-    $ docker run -it -p 8888:8888 colm_duff/goblin_lite_jupyter
+    $ docker run -it -p 8888:8888 colmduff/goblin_lite_jupyter
     ```
     
     ```{tip}
@@ -32,7 +32,7 @@ Docker support for the open-source [goblin_lite](https://colmduff.github.io/gobl
     
     ```md
     CONTAINER ID   IMAGE
-    653daa2cd48e   colm_duff/goblin_lite_jupyter
+    653daa2cd48e   colmduff/goblin_lite_jupyter
     ```
     
 8. Re-enter the container using the `docker start`command combined with the container's ID:
