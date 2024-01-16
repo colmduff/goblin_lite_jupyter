@@ -22,7 +22,7 @@ Docker support for the open-source [goblin_lite](https://colmduff.github.io/gobl
     ```
     
     ```{tip}
-    In the command above, `-it` creates an interactive bash shell in the container, `-p` binds port 8888 in the container to port 8888 on the host machine. You can read more about the `docker run` command and its arguments in the Docker command-line interface [documentation](https://docs.docker.com/engine/reference/commandline/run/).
+    In the command above, `-it` creates an interactive bash shell in the container, `-p` binds port 8888 in the container to port 8888 on the host machine. You can read more about the `docker run` command and its arguments in the Docker command-line interface [documentation](https://docs.docker.com/engine/reference/commandline/run/). 
     ```
     
 5. Copy, or control click, the unique URL printed to screen (that looks something like this: `http://127.0.0.1:8888 token=a66403740c2069691b09b09eb554db91bd90af12315566d0`) to your browser. This will open an instance of JupyterLab running inside a Docker container.
