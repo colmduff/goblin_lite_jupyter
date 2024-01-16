@@ -1,4 +1,4 @@
-# GOBLIN lite with JupyterLab Docker support
+# GOBLIN lite v 0.2.0 with JupyterLab Docker support
 
 Docker support for the open-source [goblin_lite](https://colmduff.github.io/goblin_lite/html/index.html). This repository automatically builds and publishes the image `colmduff/goblin_lite_jupyter` to DockerHub. The image is intended to be used for development with [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/#).
 
